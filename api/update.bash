@@ -1,4 +1,4 @@
-root_dir='/Users/anna/Desktop/mediumAPI'
+root_dir='$HOME/git/github-fastAPI-lambda'
 venv_dir="$root_dir/venv/lib/python3.8/site-packages"
 # ensure that if we added new packages, they will also be added to the zip file
 cd $venv_dir && zip -r9 "$root_dir/lambda.zip" . && cd "$root_dir/api" && zip -g ../lambda.zip -r .

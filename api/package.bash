@@ -1,4 +1,4 @@
-root_dir='/Users/anna/Desktop/mediumAPI'
+root_dir='$HOME/git/github-fastAPI-lambda'
 venv_dir="$root_dir/venv/lib/python3.8/site-packages"
 bucket_name="medium-aws"
 function_name="medium-aws"

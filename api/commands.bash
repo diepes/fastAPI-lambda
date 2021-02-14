@@ -5,7 +5,7 @@ pip install -r requirements.txt
 uvicorn main:app --reload
 # http://localhost:8000/docs
 
-root_dir='/Users/anna/Desktop/mediumAPI'
+root_dir='$HOME/git/github-fastAPI-lambda'
 venv_dir="$root_dir/venv/lib/python3.8/site-packages"
 cd $venv_dir && zip -r9 "$root_dir/lambda.zip" . && cd "$root_dir/api" && zip -g ../lambda.zip -r .
 # -r means recursive, 9 means: compress better, -g Grow (append to) the specified zip archive, instead of creating a new one.
