@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from v1.routers import router
+from .v1.routers import router
 from mangum import Mangum
 
 app = FastAPI(title='Cryptocurrency API',
@@ -9,8 +9,12 @@ app.include_router(router, prefix="/v1")
 
 @app.get("/")
 def read_root():
-    return {"Hello Medium Reader": "from FastAPI & API Gateway"}
+    return {"msg": "from main FastAPI & API Gateway"}
 
 
 # to make it work with Amazon Lambda, we create a handler object
 handler = Mangum(app=app)
+
+
+def testapp():
+    return app

@@ -11,5 +11,9 @@
  1. $ source venv/bin/activate
  1. $ pip install -r api/requirements.txt
  1. $ cd api; $ uvicorn api/main:app --reload
+ 1. Tests
+    * python -m pytest
+      * This puts root dir in python path and allows app to be imported into tests.
+
 # cryptoAPI
 A demo API demonstrating how to create a Python-based REST API with FastAPI, Mangum, Amazon Lambda and API Gateway
