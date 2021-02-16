@@ -15,5 +15,10 @@
     * python -m pytest
       * This puts root dir in python path and allows app to be imported into tests.
 
+# AWS docker lambda function
+$ aws ecr get-login-password | docker login --username AWS --password-stdin gallery.ecr.aws
+curl -XPOST "http://localhost:9000/2015-03-31/functions/function/invocations" -d '{}'
+
+
 # cryptoAPI
 A demo API demonstrating how to create a Python-based REST API with FastAPI, Mangum, Amazon Lambda and API Gateway
